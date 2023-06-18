@@ -1,30 +1,65 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
   <router-view/>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+:root {
+  --vuety: 'Alex Brush', cursive;
+  --text: 'League Spartan', sans-serif;
+  --mainColor: #BE2596;
+}
+html {
+  font-size: 62.5%;
 }
 
-nav {
-  padding: 30px;
+body {
+  background-color: var(--mainColor)!important;
+  font-size: 1.6rem;
+}
+h1, h2, h3, h4, h5 {
+  font-family: var(--text);
+  font-weight: 700;
+  color: #FFFFFF;
+}
+p {
+  font-family: var(--text);
+  font-weight: 300;
+  color: #FFFFFF;
+}
+h1.vuety {
+  font-family: var(--vuety);
+  font-size: 13rem;
+  color: #FFFFFF;
+}
+h1.title {
+  font-size: 5rem;
+  font-weight: 700;
+}
+h2.title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.text {
+  font-size: 3rem;
+}
+.code {
+  font-size: 2rem;
+}
+.centrar {
+  margin: 0 auto;
+  display: block;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+/*Card*/
+.card {
+  background-color: transparent!important;
+  border: none!important;
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+h5.card-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+p.card-text {
+  font-size: 2rem;
 }
 </style>
